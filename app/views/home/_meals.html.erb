@@ -1,12 +1,12 @@
 <div class="" style="width: 100%; text-align: left;">
   <h3 id="text35" class="style4">Meal Plans</h3>
-  <h2 id="text02" class="style3"><%= params[:calories] || 2000 %> Calories</h2>
+  <h2 id="text02" class="style3"><%= params[:calories] || rand(1800..2500) %> Calories</h2>
   <p id="text11" class="style5">Meals suggestions against total amount of daily calories for intake for you</p>
   <ul id="buttons01" class="style1 buttons">
   </ul>
 </div>
 <div class="card-wrapper">
-  <% @meals.each_with_index do |meal, i| %>
+  <% @meals.first(4).each_with_index do |meal, i| %>
     <h3 class="meal-title">Meal <%= i + 1%>  </h3>
     <div class="cards">
       <% meal.each do |food| %>
