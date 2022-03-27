@@ -230,7 +230,7 @@ body:before {
   -ms-transform: scale(1);
   transform: scale(1);
   background-attachment: scroll;
-  background-image: linear-gradient(to top, rgba(26, 23, 33, 0.988), rgba(26, 23, 33, 0.988)), url('assets/images/bg.svg?v=81f23adc');
+  background-image: linear-gradient(to top, rgba(26, 23, 33, 0.988), rgba(26, 23, 33, 0.988)), image-url('bg.png');
   background-position: 0% 0%, center;
   background-repeat: repeat, repeat;
   background-size: auto, cover;
