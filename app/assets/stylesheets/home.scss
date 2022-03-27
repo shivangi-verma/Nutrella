@@ -230,7 +230,7 @@ body:before {
   -ms-transform: scale(1);
   transform: scale(1);
   background-attachment: scroll;
-  background-image: linear-gradient(to top, rgba(26, 23, 33, 0.988), rgba(26, 23, 33, 0.988)), image-url('bg.png');
+  background-image: linear-gradient(to top, rgba(26, 23, 33, 0.988), rgba(26, 23, 33, 0.988));
   background-position: 0% 0%, center;
   background-repeat: repeat, repeat;
   background-size: auto, cover;
@@ -1272,6 +1272,19 @@ p.style6 a:hover {
   background-position: center, 0% 0%, center;
   background-repeat: repeat, repeat, no-repeat;
 }
+
+#container02::after{
+  content: "";
+  top: 0;
+  left: -35%;
+  opacity: 0.2;
+  width: 150%;
+  height: 100vh;
+  position: absolute;
+  background: image-url('bg.png') left top no-repeat;
+  background-size: cover;  
+}
+
 
 #container02>.wrapper {
   width: 100%;
