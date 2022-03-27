@@ -1,0 +1,70 @@
+<div class="calculator">
+  <div class="MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-center">
+    <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-center"  style="padding: 20px;">
+      <div class="MuiFormGroup-root jss4" role="radiogroup" aria-label="gender">
+        <label class="MuiFormControlLabel-root p-20">
+          <span class="MuiButtonBase-root MuiIconButton-root jss401 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary" aria-disabled="false">
+            <span class="MuiIconButton-label">
+              <input type="radio" checked="" class="jss404" name="gender" value="f" />
+            </span>
+          </span>
+          <span class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">Female</span>
+        </label>
+        <label class="MuiFormControlLabel-root">
+          <span class="MuiButtonBase-root MuiIconButton-root jss401 MuiRadio-root MuiRadio-colorSecondary jss402 Mui-checked MuiIconButton-colorSecondary" aria-disabled="false">
+            <span class="MuiIconButton-label">
+              <input type="radio" class="jss404" name="gender" value="m" />
+            </span>
+            <span class="MuiTouchRipple-root"></span>
+          </span>
+          <span class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">Male</span>
+        </label>
+      </div>
+    </div>
+    <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-center">
+      <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-center">
+        <div class="MuiFormControl-root MuiTextField-root jss3">
+          <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+            <input type="number" aria-invalid="false" id="outlined-adornment-age" value="24" min="0" class="MuiInputBase-input MuiOutlinedInput-input" />
+            <fieldset aria-hidden="true" class="jss448 MuiOutlinedInput-notchedOutline">
+              <legend class="jss450 jss451"><span>Age</span></legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-center">
+        <div class="MuiFormControl-root MuiTextField-root jss3">
+          <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+            <input type="number" aria-invalid="false" id="outlined-adornment-height-ft" value="5" min="0" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd" />
+            <fieldset aria-hidden="true" class="jss448 MuiOutlinedInput-notchedOutline">
+              <legend class="jss450 jss451"><span>Height (Feet)</span></legend>
+            </fieldset>
+          </div>
+        </div>
+        <div class="MuiFormControl-root MuiTextField-root jss3">
+          <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+            <input type="number" aria-invalid="false" id="outlined-adornment-height-in" value="5" min="0" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd" />
+            <fieldset aria-hidden="true" class="jss448 MuiOutlinedInput-notchedOutline">
+              <legend class="jss450 jss451"><span>Height (Inches)</span></legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-center">
+        <div class="MuiFormControl-root MuiTextField-root jss3">
+          <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+            <input type="number" aria-invalid="false" id="outlined-adornment-weight-lb" value="74" min="0" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd" />
+            <fieldset aria-hidden="true" class="jss448 MuiOutlinedInput-notchedOutline">
+              <legend class="jss450 jss451"><span>Weight (Kg)</span></legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="MuiGrid-root MuiGrid-item">
+      <%= link_to 'fetch_meals', class: "button n01 calculate  cal-options" do %>
+        <span class="MuiButton-label">Calculate</span><span class="MuiTouchRipple-root"></span>
+      <% end %>
+    </div>
+  </div>
+</div>
